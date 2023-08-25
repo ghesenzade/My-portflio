@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gulay's Portfolio</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+</head>
+<body>
+<!-- ..........................Header.................................. -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="logo image">
+                    <img src="assets/images/logo.jpg" alt="logo">
+                </div>
+                <nav class="nav-bar">
+                    <ul class="nav-list">
+                        <li class="nav-list-item">
+                            <a href="#home" class="active nav-link">Home</a>
+                        </li>
+                        <li class="nav-list-item">
+                            <a href="#success" class="nav-link">Successes</a>
+                        </li>
+                        <li class="nav-list-item">
+                            <a href="#skills" class="nav-link">Skills</a>
+                        </li>
+                        <li class="nav-list-item">
+                            <a href="#services" class="nav-link">Services</a>
+                        </li>
+                        <li class="nav-list-item">
+                            <a href="#projects" class="nav-link">Projects</a>
+                        </li>
+                        <li class="nav-list-item">
+                            <a href="#contact" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="profil image">
+                    <div class="no-click" onclick="toggleDropdown()">
+                        <img src="assets/images/sliderPhotos/profil.jpeg" alt="profilPhoto">
+                        <i class="fa-solid fa-caret-down icon"></i>
+                    </div>
+                    <div class="click-down">
+                        <h4>Full Name: Hesenzade Gulay</h4>
+                        <p>Contact : 050 XXX XX XX</p>
+                        <p>Email : hesenzade.g1@gmail.com</p>
+                        <li>Github : <a href="https://github.com/ghesenzade" target="_blank">ghesenzade</a></li>
+                        <li>Linkedin : <a href="https://www.linkedin.com/in/g%C3%BClay-h%C9%99s%C9%99nzad%C9%99-b5006a231/" target="_blank">Gulay Hesenzade</a></li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- ----------------Hero Section---------------- -->
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="d-flex">
+                    <div class="my-photo">
+                        <img src="assets/images/pp-bg-removebg-preview.png" alt="frame" class="frame">
+                        <img src="assets/images/sliderPhotos/pp.jpeg" alt="hero-photo" class="hero-photo">
+                    </div>
+                    <div class="about-title">
+                        <h3>FrontEnd Developer</h3>
+                        <h1>Gulay Hesenzade</h1>
+                        <p>I am a reliable,<br>
+                            hard-working person and always up <br>
+                            for new challanges. I am interested in Front-End. <br>
+                            I have some skills as HTML, CSS, JavaScript related to Front-End. <br>
+                            Additionally, I know C/C++, <br>
+                            Java, Python as a beginner. Also, I know AutoCad.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!----------------------------SUCCESS---------------------------------->
+        <section class="success" id="success">
+            <div class="container">
+                <div class="section-head">
+                    <h2>My Successes</h2>
+                </div>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <!-- content -->
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <!-- --------------------------SKILLS--------------------------------------- -->
+        <section class="skill-section" id="skills">
+            <div class="container">
+                <h2 class="section-head">Skills</h2>
+                <div class="row">
+                    <div class="tabs">
+                        <div class="tab-header">
+                            <h2 onclick="openSkill(event, 'soft')" class="tab-links active">
+                                Soft Skills
+                            </h2>
+                            <h2 onclick="openSkill(event, 'hard')" class="tab-links">
+                                Hard Skills
+                            </h2>
+                        </div>
+                        <div class="tab-body">
+                            <!-- <div> -->
+                            <div id="soft" class="tab-content active">
+                                <h3>Soft</h3>
+                                <div class="lists">
+                                    <ol>
+                                        <li>Communication</li>
+                                        <li>Problem-Solving</li>
+                                        <li>Teamwork</li>
+                                        <li>Leadership</li>
+                                    </ol>
+                                    <ol>
+                                        <li>Empathy</li>
+                                        <li>Adaptability</li>
+                                        <li>Networking</li>
+                                        <li>Time Management</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div id="hard" class="tab-content tab-content-two">
+                                <h3>Hard</h3>
+                                <div class="hard-skills">
+                                    <div class="hard-skill">
+                                        <i class="fa-brands fa-html5"></i>
+                                        <p>HTML</p>
+                                    </div>
+                                    <div class="hard-skill">
+                                        <i class="fa-brands fa-css3-alt"></i>
+                                        <p>CSS</p>
+                                    </div>
+                                    <div class="hard-skill">
+                                        <i class="fa-brands fa-sass"></i>
+                                        <p>SCSS</p>
+                                    </div>
+                                    <div class="hard-skill">
+                                        <i class="fa-brands fa-square-js"></i>
+                                        <p>JavaScript</p>
+                                    </div>
+                                        <div class="hard-skill">
+                                        <i class="fa-brands fa-bootstrap"></i>
+                                        <p>Bootstrap</p>
+                                    </div>
+                                    <div class="hard-skill">
+                                        <i class="fa-brands fa-figma"></i>
+                                        <p>Figma</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- --------------------------SERVICES-------------------------- -->
+        <section class="services-section" id="services">
+            <div class="container">
+                <h2 class="section-head">Frequently Asked Questions</h2>
+                <div class="row">
+                    <div class="accordion">
+                        <div class="accordion-content">
+                            <div class="content-header">
+                                <span class="title">What is Frontend Practice?</span>
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                            <p class="description">
+                                Frontend Practice offers developers the opportunity to practice and
+                                improve their skills in design, interactions, animations,
+                                responsiveness, troubleshooting, and more by providing a selection
+                                of real websites for them to recreate from scratch. This hands-on
+                                approach allows developers to gain a diverse set of valuable skills
+                                that will make them
+                                more employable in the industry.
+                            </p>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="content-header">
+                                <span class="title">Which programming languages include frontend?</span>
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                            <p class="description">
+                                In short, you can use any programming language you
+                                desire for these practice projects.
+                                The beauty of recreating websites for
+                                practice is that you can utilize any
+                                tech stack, such as HTML, CSS, JavaScript,
+                                React, Vue, Angular, Svelte, or any other language,
+                                framework, or library.
+                            </p>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="content-header">
+                                <span class="title">Where can I find images and icons?</span>
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                            <p class="description">
+                                Pexels and Pixabay are excellent sources for free stock photos,
+                                while Boxicons and Font Awesome offer a variety of free icons.
+                                Links to these resources
+                                can be found at the top of every project page on Frontend Practice.
+                            </p>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="content-header">
+                                <span class="title">How does front-end work?</span>
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                            <p class="description">
+                                It includes everything that users experience
+                                directly: text colors and styles, images, graphs
+                                and tables, buttons, colors, and a navigation menu.
+                                HTML, CSS, and JavaScript are the languages used for
+                                Front End development. Responsiveness
+                                and performance are the two main objectives of the
+                                Front End.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-----------------------------PROJECTS---------------------------------->
+        <section class="projects" id="projects">
+            <div class="container">
+                <h2 class="section-head">Projects</h2>
+                <div class="column">
+                    <div class="row row-gap first">
+                        <!-- content -->
+                    </div>
+                    <div class="row row-gap second">
+                        <!-- content -->
+                    </div>
+                    <div class="row row-gap third">
+                        <!-- content -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------------------------------CONTACT---------------------------------->
+        <section class="contact" id="contact">
+            <footer class="footer">
+                <div class="container">
+                    <h2 class="section-head">Contact</h2>
+                    <div class="flex footer-bg">
+                        <div class="message">
+                            <div class="column">
+                                <div class="message-img">
+                                    <img src="assets/images/message.jpg" alt="message-photo">
+                                </div>
+                                <div class="message-text">
+                                    <p>If you have a question or just <br>
+                                        want to get in touch, use the form below. I look forward to <br>
+                                        hearing from you!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form">
+                            <div class="form-head">
+                                <h3>Send Message</h3>
+                            </div>
+                            <form>
+                                <input type="text" placeholder="Your Name" class="form-inputs" required>
+                                <input type="email" placeholder="User Email" class="form-inputs" required>
+                                <textarea name="message" id="" cols="30" rows="5" class="form-inputs" placeholder="Message"></textarea>
+                                <div class="button">
+                                    <button type="submit" class="btn">Send</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </main>
+    <!-- <script src="assets/js/data.json" type="module"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/ec83fe4fbb.js" crossorigin="anonymous"></script>
+    <script src="assets/js/json.js" type="module"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

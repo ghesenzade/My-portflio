@@ -1,0 +1,132 @@
+{
+    "product": [
+        {
+            "id": 1,
+            "imgUrl": "assets/images/sliderPhotos/atestat.jpeg"
+        },
+        {
+            "id": 2,
+            "imgUrl": "assets/images/sliderPhotos/icra-ile.jpeg"
+        },
+        {
+            "id": 3,
+            "imgUrl": "assets/images/sliderPhotos/kurs.jpeg"
+        },
+        {
+            "id": 5,
+            "imgUrl": "assets/images/sliderPhotos/front-telimi.jpeg"
+        },
+        {
+            "id": 6,
+            "imgUrl": "assets/images/sliderPhotos/great-learning-front.jpeg"
+        },
+        {
+            "id": 7,
+            "imgUrl": "assets/images/sliderPhotos/ikt-lab.jpeg"
+        },
+        {
+            "id": 8,
+            "imgUrl": "assets/images/sliderPhotos/java-telimi.jpeg"
+        },
+        {
+            "id": 9,
+            "imgUrl": "assets/images/sliderPhotos/tesekkurname.jpeg"
+        },
+        {
+            "id": 10,
+            "imgUrl": "assets/images/sliderPhotos/hilton.jpeg"
+        },
+        {
+            "id": 11,
+            "imgUrl": "assets/images/sliderPhotos/socar.jpeg"
+        },
+        {
+            "id": 12,
+            "imgUrl": "assets/images/sliderPhotos/karyera.jpeg"
+        },
+        {
+            "id": 13,
+            "imgUrl": "assets/images/sliderPhotos/kitab.jpeg"
+        }
+    ],
+    "projects": [
+        {
+            "id": 1,
+            "name": "Business",
+            "image": "./assets/images/projects/business.jpg",
+            "url" : "https://github.com/ghesenzade/stats-preview-card-component-main"
+        },
+        {
+            "id": 2,
+            "name": "Qr Code",
+            "image": "./assets/images/projects/QrCode.jpg",
+            "url" : "https://github.com/ghesenzade/qr-code-component-main"
+        },
+        {
+            "id": 3,
+            "name": "Perfume",
+            "image": "./assets/images/projects/perfume.jpg",
+            "url" : "https://github.com/ghesenzade/product-preview-card-component-main"
+        },
+        {
+            "id": 4,
+            "name": "Equilibrum",
+            "image": "./assets/images/projects/equilibrum.jpg",
+            "url" : "https://github.com/ghesenzade/nft-preview-card-component-main"
+        },
+        {
+            "id": 5,
+            "name": "Music",
+            "image": "./assets/images/projects/music.jpg",
+            "url" : "https://github.com/ghesenzade/order-summary-component-main"
+        },
+        {
+            "id": 6,
+            "name": "Hundle",
+            "image": "./assets/images/projects/hundle.jpg",
+            "url" : "https://github.com/ghesenzade/Huddle"
+        },
+        {
+            "id": 7,
+            "name": "Balance",
+            "image": "./assets/images/projects/balance.jpg",
+            "url" : "https://github.com/ghesenzade/balance-card-"
+        },
+        {
+            "id": 8,
+            "name": "Advice",
+            "image": "./assets/images/projects/advice.jpg",
+            "url" : "https://github.com/ghesenzade/adviceGeneratorApp"
+        },
+        {
+            "id": 9,
+            "name": "Platform",
+            "image": "./assets/images/projects/platform.jpg",
+            "url" : "https://github.com/ghesenzade/platform"
+        },
+        {
+            "id": 10,
+            "name": "Cards",
+            "image": "./assets/images/projects/cards.jpg",
+            "url" : "https://github.com/ghesenzade/Cards"
+        },
+        {
+            "id": 11,
+            "name": "Sneakers",
+            "image": "./assets/images/projects/sneakers.jpg",
+            "url" : "https://github.com/ghesenzade/sneaker-website"
+        },
+        {
+            "id": 12,
+            "name": "Remote Work",
+            "image": "./assets/images/projects/remoteWork.jpg",
+            "url" : "https://github.com/ghesenzade/intro-section-with-dropdown-navigation-main"
+        },
+        {
+            "id": 13,
+            "name": "Bright",
+            "image": "./assets/images/projects/bright.jpeg",
+            "url" : "https://github.com/ghesenzade/news-homepage-main"
+        }
+    ]
+}

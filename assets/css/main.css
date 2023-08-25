@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;1,400;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-image: url('../images/bg7.jpg');
+    /* background-repeat: no-repeat; */
+    background-size: 100%;
+    font-family: 'Dancing Script', sans-serif;
+}
+.container{
+    width: 72%;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.section-head{
+    text-align: center;
+    font-size: 64px;
+    /* font-family: 'Dancing Script', sans-serif; */
+    margin-bottom: 30px;
+}
+
+
+/*                              header                                        */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.179);
+    padding-bottom: 30px;
+}
+.image img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.nav-list{
+    /* font-family: 'Dancing Script', sans-serif; */
+    font-weight: bold;
+    padding-top: 20px;
+    display: flex;
+    gap: 20px;
+    font-size: 30px;
+}
+.nav-list-item a{
+    color: #000;
+    transition: 0.3s all ease;
+}
+.nav-list-item a:hover,
+a.active{
+    color: rgba(57, 138, 236, 0.997);
+}
+.profil{
+    position: relative;
+    display: inline-block;
+}
+.icon{
+    cursor: pointer;
+}
+.click-down{
+    display: none;
+    position: absolute;
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    margin-left: -50px;
+    line-height: 1.5;
+    font-size: 18px;
+}
+.click-down li{
+    color: #000;
+}
+.click-down li a{
+    color: #265bdf;
+}
+/* .bg{
+    padding-bottom: 30px;
+    background-color: rgba(57, 138, 236, 0.997);
+}
+.change .nav-link{
+    color: #fff;
+    transition: 0.3s all ease;
+} 
+.change .nav-link:hover{
+    color: rgba(57, 138, 236, 0.997);
+} */
+
+
+/*...................................HERO...........................*/
+
+.hero{
+    padding: 150px 0;
+}
+.d-flex{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.my-photo .frame{
+    width: 900px;
+    height: 1450px;
+}
+.frame {
+    position: absolute;
+    z-index: 1;
+    top: -450px;
+    left: -50px;
+}
+.hero-photo{
+    border: 1px solid transparent;
+    border-radius: 50%;
+    width: 310px;
+    height: 300px;
+    top: 40px;
+    left: 40px;
+    position: relative;
+    z-index: 2;
+}
+.about-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.about-title h3{
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+h1 {
+    line-height: 2.4;
+    font-size: 48px;
+}
+.about-title p{
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+/*                 .............       Slider Section   ..............                */
+.success {
+    position: relative;
+    height: 100%;
+    padding-bottom: 100px;
+}
+
+.swiper {
+    width: 100%;
+    height: 90vh;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/*.................................Skills..............................*/
+.skill-section{
+    padding-bottom: 100px;
+}
+.tabs {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.179);
+    padding: 20px 50px;
+    border-radius: 20px;
+}
+.tab-header {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.tab-header h2 {
+    cursor: pointer;
+    color: #000;
+    font-size: 32px;
+}
+.tab-header .active {
+    color: rgba(12, 92, 154, 0.829);
+}
+.tab-body h3{
+    color: #000;
+    font-size: 32px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.lists{
+    display: flex;
+    justify-content: space-around;
+}
+ol li {
+    display: flex;
+    flex-direction: column;
+    color: #2f2e2e;
+    font-size: 24px;
+    line-height: 1.5;
+}
+.tab-content {
+    margin-top: 30px;
+}
+
+.tab-content-two {
+    display: none;
+}
+
+.hard-skills {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hard-skill i {
+    margin-bottom: 10px;
+    font-size: 60px;
+}
+.hard-skill p {
+    color: #000;
+    text-align: center;
+}
+
+/*icon colors */
+
+.fa-html5{
+    color: rgb(197, 86, 7);
+}
+.fa-css3-alt{
+    color: rgb(23, 123, 216);
+}
+.fa-sass{
+    color: rgba(205, 34, 139, 0.829);
+}
+.fa-square-js {
+    color: rgb(243, 243, 145);
+}
+.fa-bootstrap{
+    color: rgb(113, 17, 222);
+}
+
+/* ............................SERVICES............................... */
+
+.accordion{
+    font-family: 'EB Garamond', sans-serif;
+    width: 100%;
+}
+.accordion-content {
+    overflow: hidden;
+    margin: 15px 0;
+    background-color: rgb(229, 226, 226);
+    border-radius: 4px;
+    /* border: 1px solid #000; */
+}
+.content-header{
+    font-weight: 500;
+    font-style: italic;
+    line-height: 1.5;
+    font-size: 24px;
+    transition: all 0.3s linear;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 0 15px;
+    min-height: 50px;
+}
+
+.description {
+    height: 0;
+    transition: all 0.2s linear;
+    font-size: 18px;
+    color: #333;
+    font-weight: 400;
+    padding: 0 25px;
+}
+.open{
+    padding-bottom: 10px;
+}
+.open .content-header{
+    min-height: 35px;
+}
+
+/* --------------------------------Projects---------------------------- */
+.projects{
+    padding-top: 100px;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.row-gap{
+    display: flex;
+    gap: 20px;
+}
+.project{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.project img{
+    width: 100%;
+    height: auto;
+}
+/* .balance{
+    margin-top: -80px;
+}
+.top{
+    margin-top: -50px;
+}*/
+.hundle{
+    margin-top: 70px;
+} 
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -350px;
+    position: absolute;
+    background-color: #1f3d4738;
+    backdrop-filter: blur(5px);
+    padding: 30px;
+    transition: .5s ease;
+}
+.card-title{
+    color: #fff;
+    font-size: 32px;
+}
+.card-body a{
+    border: 3px solid #fff;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 10px 15px;
+    color: #265bdf;
+    transition: .3s all ease;
+    font-family: 'EB Garamond', sans-serif;
+}
+.card-body a:hover{
+    background-color: #265bdf;
+    color: #fff;
+}
+.project:hover .card-body{
+    right: 0;
+}
+
+/* --------------------------------Contact---------------------------------------------- */
+.contact{
+    margin-top: 150px;
+    padding: 50px 0;
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-bg{
+    background-color: #fff;
+}
+.message-img img{
+    width: 400px;
+    height: auto;
+}
+.message-text p{
+    font-family: 'EB Garamond', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.5;
+    padding-bottom: 20px;
+}
+.form-head{
+    text-align: center;
+    line-height: 2.4;
+    font-size: 24px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.form-inputs{
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+.button{
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    padding: 15px 20px;
+    border-radius: 30px;
+    width: 50%;
+    background-color: #2abbeb;
+    color: #fff;
+    border: none;
+    transition: 0.3s all ease;
+}
+.btn:hover {
+    background-color: #265bdf;
+}
