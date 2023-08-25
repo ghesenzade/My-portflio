@@ -10,7 +10,7 @@
 </head>
 <body>
 <!-- ..........................Header.................................. -->
-    <header class="header">
+    <header class="header bg-scroll">
         <div class="container">
             <div class="row">
                 <div class="logo image">
@@ -107,7 +107,6 @@
                             </h2>
                         </div>
                         <div class="tab-body">
-                            <!-- <div> -->
                             <div id="soft" class="tab-content active">
                                 <h3>Soft</h3>
                                 <div class="lists">
@@ -154,7 +153,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- </div> -->
                         </div>
                     </div>
                 </div>
@@ -168,59 +166,50 @@
                     <div class="accordion">
                         <div class="accordion-content">
                             <div class="content-header">
-                                <span class="title">What is Frontend Practice?</span>
+                                <span class="title">Who am I?</span>
                                 <i class="fa-solid fa-plus"></i>
                             </div>
                             <p class="description">
-                                Frontend Practice offers developers the opportunity to practice and
-                                improve their skills in design, interactions, animations,
-                                responsiveness, troubleshooting, and more by providing a selection
-                                of real websites for them to recreate from scratch. This hands-on
-                                approach allows developers to gain a diverse set of valuable skills
-                                that will make them
-                                more employable in the industry.
+                                I was born on May 28, 2004, in Nakhchivan.
+                                I studied the 1st grade in Vaykhyr village
+                                secondary school, then continued my secondary education
+                                at the 7th comprehensive secondary school located in Khirdalan City, Baku.
+                                After graduating from high school in 2021, in the same year, 
+                                I scored 609 points in the entrance exam and entered the I
+                                eng specialty of Baku Engineering University.
                             </p>
                         </div>
                         <div class="accordion-content">
                             <div class="content-header">
-                                <span class="title">Which programming languages include frontend?</span>
+                                <span class="title">What is Your Profession?</span>
                                 <i class="fa-solid fa-plus"></i>
                             </div>
                             <p class="description">
-                                In short, you can use any programming language you
-                                desire for these practice projects.
-                                The beauty of recreating websites for
-                                practice is that you can utilize any
-                                tech stack, such as HTML, CSS, JavaScript,
-                                React, Vue, Angular, Svelte, or any other language,
-                                framework, or library.
+                                As we know there are many branch of IT
+                                and I want to advance in Frontend branch that am interested in this branch
                             </p>
                         </div>
                         <div class="accordion-content">
                             <div class="content-header">
-                                <span class="title">Where can I find images and icons?</span>
+                                <span class="title">What programming languages ​​do You know?</span>
                                 <i class="fa-solid fa-plus"></i>
                             </div>
                             <p class="description">
-                                Pexels and Pixabay are excellent sources for free stock photos,
-                                while Boxicons and Font Awesome offer a variety of free icons.
-                                Links to these resources
-                                can be found at the top of every project page on Frontend Practice.
+                                I know JS (JavaScript) in the Frontend branch.
+                                Also, I know C/C++ and , additionally, Java, Ptyhon as a beginner level.
                             </p>
                         </div>
                         <div class="accordion-content">
                             <div class="content-header">
-                                <span class="title">How does front-end work?</span>
+                                <span class="title">What are Your hobbies? What do you do in your free time?</span>
                                 <i class="fa-solid fa-plus"></i>
                             </div>
                             <p class="description">
-                                It includes everything that users experience
-                                directly: text colors and styles, images, graphs
-                                and tables, buttons, colors, and a navigation menu.
-                                HTML, CSS, and JavaScript are the languages used for
-                                Front End development. Responsiveness
-                                and performance are the two main objectives of the
-                                Front End.
+                                I don't really have free time, because what I spend my time on becomes valuable.
+                                But I can say that although it is a cliché, I love reading books and
+                                listening to music. both soothe my soul. In fact, one of the reasons
+                                I read books is to improve my speaking.
+                                I also manage my blog pages.
                             </p>
                         </div>
                     </div>
@@ -232,7 +221,7 @@
             <div class="container">
                 <h2 class="section-head">Projects</h2>
                 <div class="column">
-                    <div class="row row-gap first">
+                    <div class="row row-gap first project-card">
                         <!-- content -->
                     </div>
                     <div class="row row-gap second">
@@ -268,13 +257,26 @@
                                 <h3>Send Message</h3>
                             </div>
                             <form>
-                                <input type="text" placeholder="Your Name" class="form-inputs" required>
-                                <input type="email" placeholder="User Email" class="form-inputs" required>
-                                <textarea name="message" id="" cols="30" rows="5" class="form-inputs" placeholder="Message"></textarea>
+                                <input type="text" id="name" placeholder="Your Name" class="form-inputs" required>
+                                <div class="overlay">
+                                    <div class="error-message" id="name-error"></div>
+                                </div>
+
+                                <input type="email" id="email" placeholder="User Email" class="form-inputs" required>
+                                <div class="overlay">
+                                    <div class="error-message" id="email-error"></div>
+                                </div>
+
+                                <textarea name="message" id="textarea" cols="30" rows="5" class="form-inputs" placeholder="Message"></textarea>
+                                <div class="overlay">
+                                    <div class="error-message" id="message-error"></div>
+                                </div>
+
                                 <div class="button">
                                     <button type="submit" class="btn">Send</button>
                                 </div>
                             </form>
+                            
                         </div>
                     </div>
                 </div>

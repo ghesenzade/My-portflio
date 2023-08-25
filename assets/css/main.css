@@ -9,8 +9,9 @@
 }
 body{
     background-image: url('../images/bg7.jpg');
-    /* background-repeat: no-repeat; */
-    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-size: 100%; */
     font-family: 'Dancing Script', sans-serif;
 }
 .container{
@@ -25,7 +26,6 @@ body{
 .section-head{
     text-align: center;
     font-size: 64px;
-    /* font-family: 'Dancing Script', sans-serif; */
     margin-bottom: 30px;
 }
 
@@ -37,7 +37,6 @@ header{
     left: 0;
     z-index: 10;
     width: 100%;
-    background-color: rgba(128, 128, 128, 0.179);
     padding-bottom: 30px;
 }
 .image img{
@@ -46,7 +45,6 @@ header{
     border-radius: 50%;
 }
 .nav-list{
-    /* font-family: 'Dancing Script', sans-serif; */
     font-weight: bold;
     padding-top: 20px;
     display: flex;
@@ -61,6 +59,7 @@ header{
 a.active{
     color: rgba(57, 138, 236, 0.997);
 }
+
 .profil{
     position: relative;
     display: inline-block;
@@ -81,6 +80,7 @@ a.active{
     margin-left: -50px;
     line-height: 1.5;
     font-size: 18px;
+    color: #000;
 }
 .click-down li{
     color: #000;
@@ -88,17 +88,17 @@ a.active{
 .click-down li a{
     color: #265bdf;
 }
-/* .bg{
-    padding-bottom: 30px;
-    background-color: rgba(57, 138, 236, 0.997);
-}
-.change .nav-link{
+
+.header.bg-scroll {
+    background-color: rgba(127, 180, 243, 0.997);
     color: #fff;
-    transition: 0.3s all ease;
-} 
-.change .nav-link:hover{
-    color: rgba(57, 138, 236, 0.997);
-} */
+}
+
+.header.bg-scroll .nav-link:hover,
+.header.bg-scroll a.active {
+    color: #fff;
+}
+
 
 
 /*...................................HERO...........................*/
@@ -148,9 +148,10 @@ h1 {
 .about-title p{
     font-size: 20px;
     line-height: 1.5;
+    font-family: 'EB Garamond', sans-serif;
 }
 
-/*                 .............       Slider Section   ..............                */
+/*...........................Slider Section.........................*/
 .success {
     position: relative;
     height: 100%;
@@ -320,24 +321,24 @@ ol li {
 }
 .project{
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
+    height: 350px;
     position: relative;
     overflow: hidden;
 }
 .project img{
     width: 100%;
+    /* height: 100%; */
     height: auto;
 }
-/* .balance{
-    margin-top: -80px;
+
+.third .project img{
+    width: 100%;
+    height: 70%;
 }
 .top{
-    margin-top: -50px;
-}*/
-.hundle{
-    margin-top: 70px;
-} 
-
+    margin-top: 50px;
+}
 .card-body{
     display: flex;
     flex-direction: column;
@@ -376,8 +377,8 @@ ol li {
 
 /* --------------------------------Contact---------------------------------------------- */
 .contact{
-    margin-top: 150px;
-    padding: 50px 0;
+    margin: 100px 0 50px 0;
+    padding-top: 50px;
 }
 .flex{
     display: flex;
@@ -404,10 +405,25 @@ ol li {
     font-size: 24px;
 }
 form{
+    font-family: 'EB Garamond', sans-serif;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
+
+.overlay {
+    display: none;
+    height: 20px;
+    width: 100%;
+    margin: 10px;
+}
+
+.error-message {
+    color: #ff0000;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
 .form-inputs{
     padding: 10px 20px;
     border-radius: 30px;

@@ -32,22 +32,19 @@ navLinks.forEach(link => {
     });
 });
 
-// Function add bg to header when scrolling 100px from top 
-// function updateClassesOnScroll() {
-//     const scrollPosition = window.scrollY || window.pageYOffset;
-//     const header = document.querySelector('.header');
-//     if (scrollPosition >= 100) {
-//         header.classList.add('bg');
-//         const row = document.querySelector('.row');
-//         row.classList.add('change');
-//     } else {
-//         header.classList.remove('bg');
-//     }
-// }
-// window.addEventListener('scroll', updateClassesOnScroll);
-// updateClassesOnScroll();
+function updateClassOnScroll() {
+    const scrollPosition = window.scrollY || window.pageYOffset;
+    const header = document.querySelector('.header');
 
+    if (scrollPosition >= 100) {
+        header.classList.add('bg-scroll');
+    } else {
+        header.classList.remove('bg-scroll');
+    }
+}
 
+window.addEventListener('scroll', updateClassOnScroll);
+updateClassOnScroll();
 
 
 //-------------------- header dropdown-----------------------------------
@@ -121,32 +118,64 @@ function closeOtherAccordionContent(openContent) {
 // -------------------------------CONTACT--------------------------------------------------
 
 const form = document.querySelector("form");
-form.addEventListener("submit", function(event) {
-    event.preventDefault();
-    const nameInput = document.querySelector('input[type="text"]');
-    const emailInput = document.querySelector('input[type="email"]');
-    const messageTextarea = document.querySelector('textarea[name="message"]');
+const nameInput = document.querySelector('#name');
+const emailInput = document.querySelector('#email');
+const messageTextarea = document.querySelector('#textarea');
+const nameError = document.querySelector('#name-error');
+const emailError = document.querySelector('#email-error');
+const messageError = document.querySelector('#message-error');
+
+form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    clearError();
+
+    if (!nameInput.value || !emailInput.value || !messageTextarea.value) {
+        Swal.fire('Error','You must fill all inputs.', 'warning');
+        return;
+    }
 
     const nameRegex = /^[A-Za-z-' ]+$/;
     if (!nameRegex.test(nameInput.value) || nameInput.value.length < 3) {
-        Swal.fire("Error", "Please enter a correct name", "error");
+        showError(nameError, "Please enter a correct name. Name must be at least three letters and not a number");
         return;
     }
 
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     if (!emailRegex.test(emailInput.value)) {
-        Swal.fire("Error", "Please enter a correct email address", "error");
+        showError(emailError, "Please enter a correct email address");
         return;
     }
 
     const messageWords = messageTextarea.value.trim().split(/\s+/).length;
     if (messageWords < 10) {
-        Swal.fire("Error", "Message too short. Please enter a message with at least 25 words", "error");
+        showError(messageError, "Message too short. Please enter a message with at least 10 words");
         return;
     }
-
     else{
-        Swal.fire("Good Job!","Your message has been sent successfully", "success");
+        Swal.fire({
+            title: "Good Job!",
+            text: "Your message has been sent successfully",
+            showConfirmButton: false,
+            icon: "success"
+        }).then(() => {
+            nameInput.value = '';
+            emailInput.value = '';
+            messageTextarea.value = '';
+        });;
     }
 });
+
+function showError(errorElement, message) {
+    errorElement.textContent = message;
+    errorElement.parentElement.style.display = 'block';
+}
+
+function clearError() {
+    nameError.textContent = '';
+    emailError.textContent = '';
+    messageError.textContent = '';
+    nameError.parentElement.style.display = 'none';
+    emailError.parentElement.style.display = 'none';
+    messageError.parentElement.style.display = 'none';
+}
 

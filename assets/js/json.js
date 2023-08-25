@@ -35,48 +35,49 @@ document.querySelector(".swiper-wrapper").innerHTML = success
 
 
 // .....................................PROJECT........................................
-let project = data.projects;
-project.map((data) => {
-    if (data.id >= 1 && data.id <= 5) {
-        document.querySelector('.first').innerHTML += `
+
+const projectContentFirst = document.querySelector('.first');
+const projectContentSecond = document.querySelector('.second');
+const projectContentThird = document.querySelector('.third');
+
+data.projects.map((project) => {
+    if (project.id >= 1 && project.id <= 4) {
+        projectContentFirst.innerHTML += `
         <div class="project">
-        <img src="${data.image}" alt="${data.name}">
-        <div class="card-body">
-            <h3 class="card-title">${data.name}</h3>
-            <a href="${data.url}" target="_blank">Get Source Code</a>
-        </div>
-    </div>
-        `;
-    } else if (data.id >= 6 && data.id <= 9) {
-        let projectHtml = `
-            <div class="project">
-                <img src="${data.image}" alt="${data.name}">
-                <div class="card-body">
-                    <h3 class="card-title">${data.name}</h3>
-                    <a href="${data.url}">Get Source Code</a>
-                </div>
+            <img src="${project.image}" alt="${project.name}">
+            <div class="card-body">
+                <h3 class="card-title">${project.name}</h3>
+                <a href="${project.url}" target="_blank">Get Source Code</a>
             </div>
-        `;
-        if (data.id === 6) {
-            projectHtml = projectHtml.replace('<img', '<img class="hundle"');
+        </div>`;
+    } else if (project.id >= 5 && project.id <= 9) {
+        let projectHtml = `
+        <div class="project">
+            <img src="${project.image}" alt="${project.name}">
+            <div class="card-body">
+                <h3 class="card-title">${project.name}</h3>
+                <a href="${project.url}">Get Source Code</a>
+            </div>
+        </div>`;
+        
+        if (project.id == 6) {
+            projectHtml = projectHtml.replace('<img', '<img class="top"');
         }
-        // if (data.id === 7) {
-        //     projectHtml = projectHtml.replace('<img', '<img class="balance"');
-        // }
-        document.querySelector('.second').innerHTML += projectHtml;
-    } else {
-        let projectHtml = `
-            <div class="project">
-                <img src="${data.image}" alt="${data.name}">
-                <div class="card-body">
-                    <h3 class="card-title">${data.name}</h3>
-                    <a href="${data.url}">Get Source Code</a>
-                </div>
+        else if (project.id == 8) {
+            projectHtml = projectHtml.replace('<img', '<img class="top"');
+        }
+        
+        projectContentSecond.innerHTML += projectHtml;
+    } else if (project.id >= 10 && project.id <=13) {
+        const projectHtml = `
+        <div class="project">
+            <img src="${project.image}" alt="${project.name}">
+            <div class="card-body">
+                <h3 class="card-title">${project.name}</h3>
+                <a href="${project.url}" target="_blank">Get Source Code</a>
             </div>
+        </div>
         `;
-        // if (data.id >=10 && data.id <=12) {
-        //     projectHtml = projectHtml.replace('<img', '<img class="top"');
-        // }
-        document.querySelector('.third').innerHTML += projectHtml;
+        projectContentThird.innerHTML += projectHtml;
     }
 });
