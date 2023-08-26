@@ -183,6 +183,6 @@ const day = currentDate.getDate();
 const month = currentDate.getMonth() + 1;
 const year = currentDate.getFullYear();
 
-let formattedDate = month + '/' + day + '/' + year;
+let formatDate = month + '/' + day + '/' + year;
 
-document.querySelector('#date').textContent = 'Today is: ' + formattedDate;
+document.querySelector('#date').textContent = 'Today is: ' + formatDate;
