@@ -19,8 +19,8 @@ window.addEventListener('scroll', updateActiveLink);
 
 // function that when i click navigation links go to the section
 navLinks.forEach(link => {
-    link.addEventListener('click', (event) => {
-        event.preventDefault(); 
+    link.addEventListener('click', (e) => {
+        e.preventDefault(); 
         const targetId = link.getAttribute('href');
         const targetSection = document.querySelector(targetId); 
         if (targetSection) {
@@ -32,8 +32,9 @@ navLinks.forEach(link => {
     });
 });
 
+//changing header bg on 100px from top
 function updateClassOnScroll() {
-    const scrollPosition = window.scrollY || window.pageYOffset;
+    const scrollPosition = window.scrollY;
     const header = document.querySelector('.header');
 
     if (scrollPosition >= 100) {
@@ -61,19 +62,19 @@ function toggleDropdown() {
 }
 
 // ----------------------------------Skills------------------------------------------------
-function openSkill(event, SkillName) {
+function openSkill(event, skillName) {
     const tabContents = document.querySelectorAll(".tab-content");
-    const tabLinks = document.querySelectorAll(".tab-links");
+    const tabHeaders = document.querySelectorAll(".tab-header");
 
     tabContents.forEach(content => {
         content.style.display = "none";
     });
 
-    tabLinks.forEach(link => {
-        link.classList.remove("active");
+    tabHeaders.forEach(tabHeader => {
+        tabHeader.classList.remove("active");
     });
 
-    const targetTabContent = document.getElementById(SkillName);
+    const targetTabContent = document.getElementById(skillName);
     if (targetTabContent) {
         targetTabContent.style.display = "block";
     }
@@ -171,11 +172,17 @@ function showError(errorElement, message) {
 }
 
 function clearError() {
-    nameError.textContent = '';
-    emailError.textContent = '';
-    messageError.textContent = '';
     nameError.parentElement.style.display = 'none';
     emailError.parentElement.style.display = 'none';
     messageError.parentElement.style.display = 'none';
 }
 
+//----------------------------------- footer-----------------------------
+const currentDate = new Date();
+const day = currentDate.getDate();
+const month = currentDate.getMonth() + 1;
+const year = currentDate.getFullYear();
+
+let formattedDate = month + '/' + day + '/' + year;
+
+document.querySelector('#date').textContent = 'Today is: ' + formattedDate;

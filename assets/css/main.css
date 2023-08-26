@@ -192,19 +192,19 @@ h1 {
     padding: 20px 50px;
     border-radius: 20px;
 }
-.tab-header {
+.tab-headers {
     margin-bottom: 20px;
     border-bottom: 2px solid #fff;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-.tab-header h2 {
+.tab-header {
     cursor: pointer;
     color: #000;
     font-size: 32px;
 }
-.tab-header .active {
+.tab-headers .active {
     color: rgba(12, 92, 154, 0.829);
 }
 .tab-body h3{
@@ -385,7 +385,7 @@ ol li {
     justify-content: space-around;
     align-items: center;
 }
-.footer-bg{
+.contact-bg{
     background-color: #fff;
 }
 .message-img img{

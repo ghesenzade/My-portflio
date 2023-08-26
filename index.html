@@ -28,7 +28,7 @@
                             <a href="#skills" class="nav-link">Skills</a>
                         </li>
                         <li class="nav-list-item">
-                            <a href="#services" class="nav-link">Services</a>
+                            <a href="#services" class="nav-link">FAQ</a>
                         </li>
                         <li class="nav-list-item">
                             <a href="#projects" class="nav-link">Projects</a>
@@ -98,11 +98,11 @@
                 <h2 class="section-head">Skills</h2>
                 <div class="row">
                     <div class="tabs">
-                        <div class="tab-header">
-                            <h2 onclick="openSkill(event, 'soft')" class="tab-links active">
+                        <div class="tab-headers">
+                            <h2 onclick="openSkill(event, 'soft')" class="tab-header active">
                                 Soft Skills
                             </h2>
-                            <h2 onclick="openSkill(event, 'hard')" class="tab-links">
+                            <h2 onclick="openSkill(event, 'hard')" class="tab-header">
                                 Hard Skills
                             </h2>
                         </div>
@@ -181,7 +181,7 @@
                         </div>
                         <div class="accordion-content">
                             <div class="content-header">
-                                <span class="title">What is Your Profession?</span>
+                                <span class="title">What is My Profession?</span>
                                 <i class="fa-solid fa-plus"></i>
                             </div>
                             <p class="description">
@@ -191,7 +191,7 @@
                         </div>
                         <div class="accordion-content">
                             <div class="content-header">
-                                <span class="title">What programming languages ​​do You know?</span>
+                                <span class="title">What programming languages ​​do I know?</span>
                                 <i class="fa-solid fa-plus"></i>
                             </div>
                             <p class="description">
@@ -201,7 +201,7 @@
                         </div>
                         <div class="accordion-content">
                             <div class="content-header">
-                                <span class="title">What are Your hobbies? What do you do in your free time?</span>
+                                <span class="title">What are My hobbies? What do I do in my free time?</span>
                                 <i class="fa-solid fa-plus"></i>
                             </div>
                             <p class="description">
@@ -235,10 +235,9 @@
         </section>
         <!------------------------------CONTACT---------------------------------->
         <section class="contact" id="contact">
-            <footer class="footer">
                 <div class="container">
                     <h2 class="section-head">Contact</h2>
-                    <div class="flex footer-bg">
+                    <div class="flex contact-bg">
                         <div class="message">
                             <div class="column">
                                 <div class="message-img">
@@ -280,9 +279,16 @@
                         </div>
                     </div>
                 </div>
-            </footer>
         </section>
     </main>
+    <footer>
+        <div class="container">
+            <div class="date row">
+                <p>Created by Gulay Hesenzade</p>
+                <p id="date"></p>
+            </div>
+        </div>
+    </footer>
     <!-- <script src="assets/js/data.json" type="module"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
